@@ -40,19 +40,20 @@
 
 ## 📖 Overview
 
-Detecting objects in aerial images is a challenging task due to factors like small object size, cluttered backgrounds, and varying orientations. In this project, we address these challenges using multiple object detection architectures and an ensemble strategy.
+The objective of this project is to accurately detect and classify objects such as ships, harbours, planes, jets, and other surveillance-relevant entities in aerial and satellite imagery. Aerial object detection presents unique challenges, including small object sizes, high object density, diverse orientations, and complex backgrounds. To tackle these issues, the project explores and evaluates multiple object detection architectures and employs an ensemble strategy to enhance detection accuracy and robustness across varying scenarios.
 
 ---
 
 ## 🗂 Dataset
 
-We used the **DOTA (Dataset for Object Detection in Aerial Images)** — a large-scale dataset specifically designed for aerial object detection.
+For this project, we utilized **DOTA 1.5** (Dataset for Object Detection in Aerial Images), a large-scale and richly annotated dataset tailored for aerial object detection tasks. DOTA provides high-resolution satellite and aerial imagery that closely mirrors real-world surveillance scenarios.
 
 **Key Features:**
-- High-resolution images collected from various sensors
-- 15 object categories (e.g., vehicles, ships, planes)
-- Oriented bounding box annotations
-- Real-world aerial surveillance scenarios
+- **Total Images:** 1,418 training images and 412 testing images
+- **Source Diversity:** Images captured from a variety of sensors and platforms
+- **Annotation Format:** Oriented bounding boxes to accurately capture object orientation
+- **Object Categories:** 15 real-world classes including ships, harbours, airplanes, helicopters, and other surveillance-critical objects.
+- **Challenges Addressed:** Small object sizes, dense object distributions, cluttered backgrounds, and wide-ranging orientations
 
 📚 More about DOTA: [https://captain-whu.github.io/DOTA/](https://captain-whu.github.io/DOTA/)
 
