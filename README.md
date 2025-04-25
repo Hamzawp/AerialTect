@@ -170,6 +170,7 @@ The project consists of the following files:
 - `FRCNN_Implementation.ipynb`: Implementation of the Faster R-CNN model.
 - `Ensemble_Implementation.ipynb`: Combining predictions from multiple models using ensemble methods.
 - `Testing.ipynb`: For testing and evaluating the models.
+- `Playground.ipynb`: To have a fun and experience on models.
 
 ---
 
