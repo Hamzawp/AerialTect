@@ -23,18 +23,18 @@
 
 ## 📌 Table of Contents
 
-- [Overview](#overview)
-- [Dataset](#dataset)
-- [Models Implemented](#models-implemented)
-- [Algorithms Used](#algorithms-used)
-- [Model Architectures](#model-architectures)
-- [Performance](#performance)
+- [Overview](#-overview)
+- [Dataset](#-dataset)
+- [Models Implemented](#-models-implemented)
+- [Algorithms Used](#-algorithms-used)
+- [Model Architectures](#-model-architectures)
+- [Performance](#-performance)
 - [Results](#results)
-- [Ensemble Method](#ensemble-method)
-- [Installation](#installation)
+- [Ensemble Method](#-ensemble-method)
+- [Installation](#%EF%B8%8F-installation)
 - [Project Structure](#project-structure)
-- [Contributors](#contributors)
-- [License](#license)
+- [Contributors](#authors)
+- [License](#license-)
 
 ---
 
