@@ -61,13 +61,19 @@ For this project, we utilized **DOTA 1.5** (Dataset for Object Detection in Aeri
 
 ## 🧠 Models Implemented
 
-The following deep learning-based object detection models were implemented:
+To effectively detect objects such as ships, harbours, aircraft, and other surveillance targets in aerial imagery, we implemented three deep learning-based object detection models—SSD, YOLO, and Faster R-CNN—each trained and evaluated independently on the DOTA 1.5 dataset.
 
-- **SSD (Single Shot Multibox Detector)**
+- **SSD (Single Shot Multibox Detector)**:
+  SSD offers a balance between speed and accuracy through a single-stage detection framework that predicts bounding boxes and classes simultaneously. However, a major drawback of SSD is its relatively poor performance in detecting small objects, which are common in aerial imagery. Its fixed-scale anchor boxes and reliance on lower-resolution feature maps often result in missed detections or inaccurate localization. Due to these limitations, other models were explored to improve detection of fine-grained and densely packed targets.
+  
 - **YOLO (You Only Look Once)**
+  YOLO is known for its exceptional speed and real-time processing capabilities. It treats detection as a regression problem and predicts bounding boxes and class probabilities directly from the entire image. However, YOLO also struggles with detecting small or overlapping objects, especially in cluttered scenes, due to its coarse grid-based prediction mechanism. Despite this, its fast inference time made it a valuable benchmark and a suitable candidate for scenarios requiring quick surveillance scans.
+  
 - **Faster R-CNN (FRCNN)**
+  Faster R-CNN uses a two-stage detection process: a Region Proposal Network (RPN) to generate candidate object regions, followed by classification and bounding box refinement. This architecture achieves high accuracy and better localization, especially for small, overlapping, and rotated objects—making it highly suitable for aerial surveillance. The main drawback, however, is its higher computational cost and slower inference speed, which may not be ideal for real-time applications.
 
-Each model was trained and evaluated independently on the DOTA dataset.
+**Comparitive Insight**
+While YOLO significantly outperformed the other models in terms of speed and efficiency, it lagged behind in detecting small and overlapping objects. On the other hand, Faster R-CNN, although slower, consistently delivered higher accuracy and better localization, especially in complex aerial scenes. This trade-off between speed and precision is a critical consideration when choosing the appropriate model for real-world aerial object detection tasks.
 
 ---
 
