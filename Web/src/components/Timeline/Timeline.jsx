@@ -10,7 +10,7 @@ const Timeline = () => {
     stepRefs.current.forEach((step, index) => {
       setTimeout(() => {
         step?.scrollIntoView({ behavior: "smooth" });
-      }, index * 2000); // 2 seconds per step
+      }, index * 2000);
     });
   };
 

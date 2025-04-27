@@ -30,7 +30,6 @@ export default function ImageUpload({ onUploadSuccess }) {
       console.log("Upload successful", response.data);
       alert("Image uploaded successfully!");
 
-      // Call the function to scroll after successful upload
       onUploadSuccess();
     } catch (error) {
       console.error("Upload failed", error);

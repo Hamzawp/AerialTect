@@ -1,0 +1,89 @@
+.timeline-container {
+  padding: 0 25px;
+  margin: 0 60px;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: 14em;
+  display: inline-block;
+}
+
+.container ul {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container ul:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  height: 100%;
+  border: 1px dashed #aaa;
+}
+
+.box {
+  margin: 50px 0;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 400px;
+  position: relative;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 3px rgba(100, 100, 100, 0.3);
+}
+.box > span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+.box > span:before,
+.box > span:after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ccc;
+  background: #01579b;
+  border-radius: 100%;
+}
+.box > span:before {
+  top: -12px;
+}
+.box > span:after {
+  top: 100%;
+}
+.box .title {
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.box .sub-title {
+  font-size: 0.5rem;
+  color: #aaa;
+}
+.box .info {
+  margin: 15px 0;
+}
+.box .time span {
+  position: absolute;
+  font-size: 0.5rem;
+  color: #aaa;
+}
+.box .time span:first-child {
+  top: -10px;
+  left: -70px;
+}
+.box .time span:last-child {
+  top: 100%;
+  left: -70px;
+}
